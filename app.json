@@ -1,0 +1,24 @@
+{
+    "name": "Deploy",
+    "description": "Deploy",
+    "keywords": ["Deploy"],
+    "env": {
+        "SITE_URL": {
+            "description": "https://example.com",
+            "required": false,
+            "value": ""
+        },
+        "TZ": {
+            "description": "TIMEZONE",
+            "required": false,
+            "value": "Asia/Dhaka"
+        },
+        "CDN": {
+        	  "description": "CDN URL",
+        	  "required": false,
+        	  "value": "https://cdn.jsdelivr.net/gh/5hojib/alist-web-dist@main/"
+        }
+    },
+    "addons": [{"plan": "heroku-postgresql"}],
+    "stack": "container"
+}
